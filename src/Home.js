@@ -1,23 +1,31 @@
+// 1. we want to use useState we first import useState from react
+
+
+
+import { useState } from "react";
+
 const Home = () => {
 
+    //use state
+   const [name,setName] =useState('iranga')
+   const [age,setAge]=useState(20) 
+
+
+// this is click events and functions
 const handleClick = () =>{
-    console.log("hi react")
-}
+    setName('amal');
+    setAge(21)
 
-
-
-const handleClickAgain = (name) =>{
-    console.log("hi react" + name)
 }
 
     return ( 
         <div className="Content">
             <h2> Homepage</h2>
-            <button onClick={handleClick}>click me</button>
-            <br/>
-            <button onClick={() => handleClickAgain('iranga')}>click me Again</button>
+            <p> My name is {name} . i am {age} years old; </p>
+           <button onClick={handleClick}>click me</button>
+        
         </div>
      );
 }
- 
+
 export default Home;
