@@ -36,3 +36,16 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+
+.blog-list{
+  margin-bottom: 10px;
+}
+
+.blog-preview{
+  margin-top: 5px;
+}
+
+.blog-preview h1{
+  color: #f1356d;
+}
